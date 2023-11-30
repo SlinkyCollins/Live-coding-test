@@ -41,7 +41,9 @@ let totalPrice = 0;
 
 if (budgetArray && budgetArray.length > 0) {
   display();
-} 
+} else {
+    result.innerHTML+= "No budget available";
+}
 
 const deleteBudget = (i) => {
     budgetArray.splice(i, 1);
